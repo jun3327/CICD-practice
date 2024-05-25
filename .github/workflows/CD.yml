@@ -78,8 +78,8 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
       run:
         aws deploy create-deployment 
-        --application-name now-sopt-deploy
-        --deployment-group-name now-sopt-deploy
+        --application-name sopt-seminar-week7-deploy
+        --deployment-group-name sopt-seminar-week7-deploy
         --file-exists-behavior OVERWRITE 
         --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=now-sopt.zip
         --region ap-northeast-2
