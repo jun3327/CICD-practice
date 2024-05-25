@@ -8,6 +8,7 @@ public class CicdApplication {
 
 	public static void main(String[] args) {
 		System.out.println("CICD Test");
+		System.out.println("CICD Test");
 		SpringApplication.run(CicdApplication.class, args);
 	}
 
