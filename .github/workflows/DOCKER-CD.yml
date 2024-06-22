@@ -47,7 +47,7 @@ jobs:
 
       - name: docker image 빌드 및 푸시
         run: |
-          docker build --platform linux/amd64 -t jun3327/sopt-seminar.
+          docker build --platform linux/amd64 -t jun3327/sopt-seminar .
           docker push jun3327/sopt-seminar
         working-directory: ${{ env.working-directory }}
 
